@@ -3,6 +3,17 @@
     <head> 
         <title>Day 1 - Traversing</title>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript">
+			// select all nested lists
+			// select the last <li> in every list.
+			// find all <li>s that contain <span> tags
+			
+			$(function () {
+				console.log($("ul ol, ul ul, ol ul, ol ol")); // could also do $("ul,ol").has("ul,ol")
+				console.log($("li:last-child"));
+				console.log($("li").has("span"));
+			});
+		</script>
     </head> 
     <body> 
         <div id="outer-wrapping">
